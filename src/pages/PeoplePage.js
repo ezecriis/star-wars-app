@@ -13,7 +13,6 @@ const PeoplePage = ({ match }) => {
 
     const res = await axios.get(`https://swapi.dev/api/people/${id}`);
     if (res && res.data) {
-      console.log(res.data);
       setPeopleDetail(res.data);
     } else {
       setPeopleDetail(null);
