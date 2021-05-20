@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 import Loader from '../components/Loader';
 
-const Homepage = () => {
+const HomePage = () => {
 
     const [peopleData, setPeopleData] = useState([]);
     const [loading, setLoading] = useState(true)
@@ -63,4 +63,4 @@ const Homepage = () => {
     )
 }
 
-export default Homepage;
+export default HomePage;
