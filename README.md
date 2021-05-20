@@ -10,7 +10,7 @@ Project created with 'npx create-react-app', which lists the Star Wars character
 
 ## ⚙️ Run Web app locally
 
-Make sure that you have the [Yarn](https://yarnpkg.com/en/) or `npm` installed, then install dependecies:
+Make sure that you have the `yarn` or `npm` installed, then install dependecies:
 
 ```sh
 yarn install
