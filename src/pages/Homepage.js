@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import { Row, Col, Container } from 'react-bootstrap';
-import { Card } from 'react-bootstrap';
+import { Row, Col, Container, Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 import Loader from '../components/Loader';
@@ -20,7 +19,6 @@ const Homepage = () => {
                 peopleArray.push(people);
             });
         }
-        // console.log(`People Data Results: ${peopleArray}`);
         setPeopleData(peopleArray);
         setLoading(false);
     }
@@ -32,11 +30,8 @@ const Homepage = () => {
     const peopleCards = peopleData.map(people => {
 
         const peopleUrlSplitted = people.url.split('/');
-        // console.log(peopleUrlSplitted);
         const peopleId = peopleUrlSplitted[(5)];
-        // console.log(peopleId);
         const peopleLocalUrl = `/people/${peopleId}` ;
-        // console.log(peopleLocalUrl);
 
         return (
             <Col key={people.name} xs={12} sm={12} md={4} lg={4} xl={4}>
