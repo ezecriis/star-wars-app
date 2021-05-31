@@ -2,7 +2,7 @@
 
 Project created with 'npx create-react-app', which lists the Star Wars characters from this api <https://swapi.dev/api/people/>, when you click on the character it should show the character detail.
 
-## Stack tecnológico
+## Stack technical
 
 * HTML5
 * React
